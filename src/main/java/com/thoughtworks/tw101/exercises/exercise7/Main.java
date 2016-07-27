@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
         GuessingGameDriver ggd = new GuessingGameDriver();
         if (ggd != null) {
-            ggd.startGame();
+            ggd.playGame();
         } else {
             throw new RuntimeException();
         }

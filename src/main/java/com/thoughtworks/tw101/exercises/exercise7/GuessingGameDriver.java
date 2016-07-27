@@ -16,7 +16,7 @@ public class GuessingGameDriver {
         ANSWER = randomizer.getAnswer();
     }
 
-    public void startGame() {
+    public void playGame() {
         System.out.println("Guess the magic number from 1-100!");
         int guess = scanner.nextInt();
         while (guess != ANSWER) {
