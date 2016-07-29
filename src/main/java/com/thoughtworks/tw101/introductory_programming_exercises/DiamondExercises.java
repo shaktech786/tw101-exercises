@@ -13,7 +13,16 @@ public class DiamondExercises {
 //             ***
 //            *****
     private static void drawAnIsoscelesTriangle(int n) {
-
+        if (n==0) return;
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n-1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < i*2 + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 
 //    Diamond
@@ -24,7 +33,25 @@ public class DiamondExercises {
 //             ***
 //              *
     private static void drawADiamond(int n) {
-
+        if (n==0) return;
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n-1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < i*2 + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = n-2; i >= 0; i--) {
+            for (int j = i; j < n-1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < i*2 + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 
 //    Diamond with Name
@@ -36,6 +63,25 @@ public class DiamondExercises {
 //            ***
 //             *
     private static void drawADiamondWithYourName(int n) {
-
+        if (n==0) return;
+        for (int i = 0; i < n-1; i++) {
+            for (int j = i; j < n-1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < i*2 + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println("Shakeel");
+        for (int i = n-2; i >= 0; i--) {
+            for (int j = i; j < n-1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < i*2 + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
